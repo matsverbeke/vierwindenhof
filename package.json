@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && npm --prefix studio run build && node scripts/copy-studio-dist.js",
+    "build": "tsc -b && vite build && npm --prefix studio install && npm --prefix studio run build && node scripts/copy-studio-dist.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
