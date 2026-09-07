@@ -10,6 +10,8 @@ const dataset = process.env.SANITY_STUDIO_DATASET || 'production'
 export default defineConfig({
   name: 'default',
   title: '4windenhof',
+  // Serve the Studio under /admin when deployed together with the frontend
+  basePath: '/admin',
 
   projectId,
   dataset,
