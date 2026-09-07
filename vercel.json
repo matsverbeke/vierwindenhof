@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/static/(.*)",
+      "destination": "/admin/static/$1"
+    },
+    {
+      "source": "/vendor/(.*)",
+      "destination": "/admin/vendor/$1"
+    },
+    {
       "source": "/admin(.*)",
       "destination": "/admin/index.html"
     },
