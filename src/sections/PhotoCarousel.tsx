@@ -44,7 +44,7 @@ export const PhotoCarousel: React.FC = () => {
   return (
     <section
       ref={ref}
-      className={`bg-[#F9F8F5] pb-24 transition-all duration-700 ease-out ${
+      className={`bg-[#F9F8F5] pb-24 transition-opacity duration-700 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       }`}
     >
@@ -62,14 +62,14 @@ export const PhotoCarousel: React.FC = () => {
         <div className="hidden sm:flex items-center space-x-2">
           <button
             onClick={() => scroll("left")}
-            className="p-3 rounded-full bg-white border border-gray-200 text-foreground hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"
+            className="p-3 rounded-full bg-white border border-gray-200 text-foreground hover:bg-primary hover:text-white transition-colors transition-transform duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"
             aria-label="Vorige foto"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="p-3 rounded-full bg-white border border-gray-200 text-foreground hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"
+            className="p-3 rounded-full bg-white border border-gray-200 text-foreground hover:bg-primary hover:text-white transition-colors transition-transform duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"
             aria-label="Volgende foto"
           >
             <ChevronRight className="w-5 h-5" />

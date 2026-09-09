@@ -22,8 +22,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={
         announcementVisible
-          ? "absolute left-0 top-12 w-full z-50 bg-transparent transition-all duration-500 ease-out animate-rise-in"
-          : "absolute top-0 left-0 w-full z-50 bg-transparent transition-all duration-500 ease-out animate-rise-in"
+          ? "absolute left-0 top-12 w-full z-50 bg-transparent transition-opacity duration-500 ease-out animate-rise-in"
+          : "absolute top-0 left-0 w-full z-50 bg-transparent transition-opacity duration-500 ease-out animate-rise-in"
       }
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
@@ -47,7 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             type="button"
             onClick={onNavigateHome}
-            className={`font-medium text-base transition-all duration-300 drop-shadow-sm cursor-pointer hover:-translate-y-0.5 ${
+            className={`font-medium text-base transition-colors duration-300 drop-shadow-sm cursor-pointer hover:-translate-y-0.5 ${
               activePage === "home"
                 ? "text-white underline underline-offset-8 decoration-2 decoration-primary"
                 : "text-white/90 hover:text-white"
@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             type="button"
             onClick={onNavigateWoningen}
-            className={`font-medium text-base transition-all duration-300 drop-shadow-sm cursor-pointer hover:-translate-y-0.5 ${
+            className={`font-medium text-base transition-colors duration-300 drop-shadow-sm cursor-pointer hover:-translate-y-0.5 ${
               activePage === "woningen"
                 ? "text-white underline underline-offset-8 decoration-2 decoration-primary"
                 : "text-white/90 hover:text-white"
@@ -69,7 +69,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             type="button"
             onClick={onNavigateStreek}
-            className={`font-medium text-base transition-all duration-300 drop-shadow-sm cursor-pointer hover:-translate-y-0.5 ${
+            className={`font-medium text-base transition-colors duration-300 drop-shadow-sm cursor-pointer hover:-translate-y-0.5 ${
               activePage === "streek"
                 ? "text-white underline underline-offset-8 decoration-2 decoration-primary"
                 : "text-white/90 hover:text-white"
@@ -82,15 +82,15 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Mobile menu knop */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 rounded-xl text-white bg-black/25 backdrop-blur-md border border-white/20 shadow-lg transition-all duration-300 hover:bg-black/35 hover:scale-105 cursor-pointer"
+          className="md:hidden p-2 rounded-xl text-white bg-black/25 backdrop-blur-md border border-white/20 shadow-lg transition-colors transition-transform duration-300 hover:bg-black/35 hover:scale-105 cursor-pointer"
           aria-label="Toggle menu"
           aria-expanded={mobileOpen}
           aria-controls="mobile-navigation"
         >
           {mobileOpen ? (
-            <X className="w-6 h-6" />
+            <X className="w-7 h-7" />
           ) : (
-            <Menu className="w-6 h-6" />
+            <Menu className="w-7 h-7" />
           )}
         </button>
       </div>
@@ -111,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               setMobileOpen(false);
               onNavigateHome();
             }}
-            className={`w-full text-left rounded-2xl px-4 py-3 text-base font-medium transition-all cursor-pointer ${
+            className={`w-full text-left rounded-2xl px-4 py-3 text-base font-medium transition-colors cursor-pointer ${
               activePage === "home"
                 ? "bg-primary/12 text-primary"
                 : "text-foreground hover:bg-[#f3ecde]"
@@ -125,7 +125,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               setMobileOpen(false);
               onNavigateWoningen();
             }}
-            className={`w-full text-left rounded-2xl px-4 py-3 text-base font-medium transition-all cursor-pointer ${
+            className={`w-full text-left rounded-2xl px-4 py-3 text-base font-medium transition-colors cursor-pointer ${
               activePage === "woningen"
                 ? "bg-primary/12 text-primary"
                 : "text-foreground hover:bg-[#f3ecde]"
@@ -139,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               setMobileOpen(false);
               onNavigateStreek();
             }}
-            className={`w-full text-left rounded-2xl px-4 py-3 text-base font-medium transition-all cursor-pointer ${
+            className={`w-full text-left rounded-2xl px-4 py-3 text-base font-medium transition-colors cursor-pointer ${
               activePage === "streek"
                 ? "bg-primary/12 text-primary"
                 : "text-foreground hover:bg-[#f3ecde]"
