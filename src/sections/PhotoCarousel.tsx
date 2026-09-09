@@ -3,22 +3,22 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const photos = [
-  { src: "/images/4.jpg", alt: "Terras" },
-  { src: "/images/2.jpg", alt: "Overkapping" },
-  { src: "/images/20230306_161749.jpg", alt: "Woonkamer grote woning" },
-  { src: "/images/15.jpg", alt: "Keuken grote woning" },
-  { src: "/images/7.jpg", alt: "Slaapkamer" },
-  { src: "/images/8.jpg", alt: "Slaapkamer" },
+  { src: "/images/4.webp", alt: "Terras" },
+  { src: "/images/2.webp", alt: "Overkapping" },
+  { src: "/images/20230306_161749.webp", alt: "Woonkamer grote woning" },
+  { src: "/images/15.webp", alt: "Keuken grote woning" },
+  { src: "/images/7.webp", alt: "Slaapkamer" },
+  { src: "/images/8.webp", alt: "Slaapkamer" },
 
-  { src: "/images/6.jpg", alt: "Keuken kleine woning" },
-  { src: "/images/5.jpg", alt: "Woonkamer kleine woning" },
-  { src: "/images/9.jpg", alt: "Slaapkamer" },
-  { src: "/images/DSCN8084.JPG", alt: "Uitzicht" },
-  { src: "/images/bovenaanzicht.jpg", alt: "Bovenaanzicht" },
-  { src: "/images/16.jpg", alt: "Uitzicht" },
-  { src: "/images/18.jpg", alt: "Activiteiten" },
+  { src: "/images/6.webp", alt: "Keuken kleine woning" },
+  { src: "/images/5.webp", alt: "Woonkamer kleine woning" },
+  { src: "/images/9.webp", alt: "Slaapkamer" },
+  { src: "/images/DSCN8084.webp", alt: "Uitzicht" },
+  { src: "/images/bovenaanzicht.webp", alt: "Bovenaanzicht" },
+  { src: "/images/16.webp", alt: "Uitzicht" },
+  { src: "/images/18.webp", alt: "Activiteiten" },
   {
-    src: "/images/56269940_1250816698376488_3599188890470055936_o.jpg",
+    src: "/images/56269940_1250816698376488_3599188890470055936_o.webp",
     alt: "Activiteiten",
   },
 ];
@@ -92,6 +92,10 @@ export const PhotoCarousel: React.FC = () => {
             <img
               src={item.src}
               alt={item.alt}
+              loading="lazy"
+              decoding="async"
+              width={720}
+              height={720}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">

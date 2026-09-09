@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           type="button"
         >
           <img
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="4windenhof"
             className="min-h-12 sm:h-14 w-auto drop-shadow-md"
           />

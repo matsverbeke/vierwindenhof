@@ -76,7 +76,7 @@ export const HeroBooking: React.FC<HeroBookingProps> = ({
     <section
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/IMG_20211013_181147.jpg')",
+        backgroundImage: "url('/images/IMG_20211013_181147.webp')",
       }}
     >
       <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-black/30" />

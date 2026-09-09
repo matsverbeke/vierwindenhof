@@ -66,7 +66,7 @@ export const WoningenPage: React.FC<WoningenPageProps> = ({
     <main className="bg-muted-bg text-foreground">
       <section
         className="relative min-h-[78vh] flex items-end overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/IMG_20210925_180450.jpg')" }}
+        style={{ backgroundImage: "url('/images/IMG_20210925_180450.webp')" }}
       >
         <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/50 to-black/25" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-28 w-full">
@@ -96,8 +96,12 @@ export const WoningenPage: React.FC<WoningenPageProps> = ({
                 aria-label="Vergroot de plattegrond van de woningen"
               >
                 <img
-                  src="/images/hoeve.jpg"
+                  src="/images/hoeve.webp"
                   alt="Plattegrond van de woningen op 4windenhof"
+                  loading="lazy"
+                  decoding="async"
+                  width={1200}
+                  height={900}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </button>
@@ -127,8 +131,12 @@ export const WoningenPage: React.FC<WoningenPageProps> = ({
               <X className="h-5 w-5" />
             </button>
             <img
-              src="/images/hoeve.jpg"
+              src="/images/hoeve.webp"
               alt="Vergrote plattegrond van de woningen op 4windenhof"
+              loading="lazy"
+              decoding="async"
+              width={1600}
+              height={1200}
               className="max-h-[90vh] w-full object-contain bg-black"
             />
           </div>

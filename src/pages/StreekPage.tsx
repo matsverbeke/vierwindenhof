@@ -109,7 +109,7 @@ export const StreekPage: React.FC = () => {
       <section
         ref={heroRef}
         className="relative min-h-[80vh] flex items-end overflow-hidden bg-cover bg-center bg-[#1f1f1f]"
-        style={{ backgroundImage: "url('/images/DSC_7465.JPG')" }}
+        style={{ backgroundImage: "url('/images/DSC_7465.webp')" }}
       >
         <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/50 to-black/25" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-24 lg:py-28 w-full">
@@ -263,7 +263,7 @@ export const StreekPage: React.FC = () => {
               style={{ transitionDelay: "240ms" }}
             >
               <img
-                src="/images/DSCN8084.JPG"
+                src="/images/DSCN8084.webp"
                 alt="Streekbeeld rond 4windenhof"
                 className="w-full h-full object-cover"
               />

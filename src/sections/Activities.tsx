@@ -74,8 +74,12 @@ export const Activities: React.FC = () => {
           <div className="lg:col-span-5 animate-rise-in [animation-delay:140ms]">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 hover-lift">
               <img
-                src="/images/kalenderscale.jpg"
+                src="/images/kalenderscale.webp"
                 alt="Wandelen in de natuur"
+                loading="lazy"
+                decoding="async"
+                width={800}
+                height={480}
                 className="w-full h-120 object-cover"
               />
             </div>
