@@ -184,7 +184,7 @@ export const WoningenPage: React.FC<WoningenPageProps> = ({
               </p>
               <div className="pt-4 border-t border-blue-100">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-500 mb-3">
-                  PDF keukeninventaris
+                  keukeninventaris
                 </p>
                 {smallHousePdfUrl ? (
                   <a
@@ -239,7 +239,7 @@ export const WoningenPage: React.FC<WoningenPageProps> = ({
               </p>
               <div className="pt-4 border-t border-emerald-100">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600 mb-3">
-                  PDF keukeninventaris
+                  keukeninventaris
                 </p>
                 {largeHousePdfUrl ? (
                   <a
