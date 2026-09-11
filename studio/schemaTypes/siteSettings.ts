@@ -7,16 +7,16 @@ export default defineType({
   fields: [
     defineField({
       name: 'homeAnnouncementEnabled',
-      title: 'Melding op homepage tonen',
+      title: 'Melding op homepagina tonen',
       type: 'boolean',
       initialValue: false,
-      description: 'Zet dit aan om tijdelijk een belangrijk bericht bovenaan de homepage te tonen.',
+      description: 'Zet dit aan om tijdelijk een belangrijk bericht bovenaan de homepagina te tonen.',
     }),
     defineField({
       name: 'homeAnnouncementText',
       title: 'Melding tekst',
       type: 'text',
-      description: 'De volledige boodschap die je tijdelijk op de homepage wilt tonen.',
+      description: 'De volledige boodschap die je tijdelijk op de homepagina wilt tonen.',
       validation: (Rule) =>
         Rule.custom((value, context) => {
           const isEnabled = Boolean(

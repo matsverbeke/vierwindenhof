@@ -1,6 +1,7 @@
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
+import {nlNLLocale} from '@sanity/locale-nl-nl'
 import {schemaTypes} from './schemaTypes'
 import {structure} from './structure'
 
@@ -16,7 +17,7 @@ export default defineConfig({
   projectId,
   dataset,
 
-  plugins: [structureTool({structure}), visionTool()],
+  plugins: [structureTool({structure}), visionTool(), nlNLLocale()],
 
   schema: {
     types: schemaTypes,
