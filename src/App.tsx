@@ -34,13 +34,13 @@ const pageMeta: Record<
   home: {
     title: "Vakantiehuis in Loker, Heuvelland | 4windenhof",
     description:
-      "Vakantiehuis in Loker, Heuvelland bij 4windenhof. Comfortabele verblijfplaats in de Ardennen voor gezinnen, wandelaars en fietsers.",
+      "Vakantiehuis in Loker, Heuvelland bij 4windenhof. Comfortabele verblijfplaats in Heuvelland voor gezinnen, wandelaars en fietsers.",
     keywords:
-      "vakantiehuis Loker, vakantiehuis Heuvelland, vakantie in de Ardennen, 4windenhof, vakantiewoning Heuvelland, familie vakantie Loker",
+      "vakantiehuis Loker, vakantiehuis Heuvelland, vakantie in Heuvelland, 4windenhof, vakantiewoning Heuvelland, familie vakantie Loker",
     canonical: "https://www.4windenhof.be/",
     ogTitle: "Vakantiehuis in Loker, Heuvelland | 4windenhof",
     ogDescription:
-      "Geniet van een rustiek en comfortabel vakantiehuis in Loker, Heuvelland, ideaal voor gezinnen, wandelaars en fietsers in de Ardennen.",
+      "Geniet van een rustiek en comfortabel vakantiehuis in Loker, Heuvelland, ideaal voor gezinnen, wandelaars en fietsers in Heuvelland.",
     twitterTitle: "Vakantiehuis in Loker, Heuvelland | 4windenhof",
     twitterDescription:
       "Rustig vakantiehuis in Loker, Heuvelland voor gezinnen, wandelaars en fietsers.",
@@ -48,13 +48,13 @@ const pageMeta: Record<
   woningen: {
     title: "Vakantiewoningen in Loker, Heuvelland | 4windenhof",
     description:
-      "Ontdek de vakantiewoningen van 4windenhof in Loker, Heuvelland. Ruime, comfortabele woningen voor een ontspannen vakantie in de Ardennen.",
+      "Ontdek de vakantiewoningen van 4windenhof in Loker, Heuvelland. Ruime, comfortabele woningen voor een ontspannen vakantie in Heuvelland.",
     keywords:
       "vakantiewoningen Heuvelland, vakantiehuis Loker, 4windenhof woningen, huurwoning Heuvelland, vakantie in Ardennen",
     canonical: "https://www.4windenhof.be/woningen",
     ogTitle: "Vakantiewoningen in Loker, Heuvelland | 4windenhof",
     ogDescription:
-      "Bekijk onze comfortabele vakantiewoningen in Loker, Heuvelland en boek een ontspannen verblijf in de Ardennen.",
+      "Bekijk onze comfortabele vakantiewoningen in Loker, Heuvelland en boek een ontspannen verblijf in Heuvelland.",
     twitterTitle: "Vakantiewoningen in Loker, Heuvelland | 4windenhof",
     twitterDescription:
       "Ruime en comfortabele vakantiewoningen in Loker, Heuvelland.",
@@ -62,7 +62,7 @@ const pageMeta: Record<
   streek: {
     title: "Wandelen en fietsen in Loker, Heuvelland | 4windenhof",
     description:
-      "Verken de natuur rond 4windenhof in Loker, Heuvelland: wandelroutes, fietspaden en rustige vakantie in de Ardennen.",
+      "Verken de natuur rond 4windenhof in Loker, Heuvelland: wandelroutes, fietspaden en rustige vakantie in Heuvelland.",
     keywords:
       "Heuvelland wandelen, fietsen Ardennen, Loker natuur, vakantie in Heuvelland, wandelvakantie Loker",
     canonical: "https://www.4windenhof.be/streek",

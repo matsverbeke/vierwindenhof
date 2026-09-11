@@ -11,10 +11,10 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
   const minGuests = siteSettings?.smallHouseGuests;
   const maxGuests = siteSettings?.largeHouseGuests;
   const stats = [
-    { value: "2.500 m²", label: "eigen grond" },
+    { value: "2.500 m²", label: "tuin" },
     { value: "2 woningen", label: "op één domein" },
     {
-      value: `${minGuests ?? "..."}–${maxGuests ?? "..."} gasten`,
+      value: `${minGuests ?? "..."} + ${maxGuests ?? "..."} gasten`,
       label: "ideaal formaat",
     },
     { value: "± 10 min", label: "wandelen van dorpskern" },
@@ -25,7 +25,7 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
       {/* Zwevende balk die over de hero valt */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -translate-y-12">
         <div className="relative -mt-12 sm:-mt-16 z-20 bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-8 hover-lift animate-rise-in">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:divide-x divide-gray-100">
             {stats.map((stat, idx) => (
               <div
                 key={idx}
@@ -55,7 +55,7 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
             van onze boerderij een nieuw leven met twee vakantiewoningen: één
             kleine en één grote. 4windenhof is een geliefd vakantiehuis in Loker
             voor gezinnen, wandelaars en fietsers die rust, ruimte en een
-            authentieke vakantie in de Ardennen zoeken. Het ligt tussen wandel-,
+            authentieke vakantie in Heuvelland zoeken. Het ligt tussen wandel-,
             fiets- en ruiterpaden, op een steenworp van de Franse grens en vlak
             bij Ieper en Rijsel.
           </p>

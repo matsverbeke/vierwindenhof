@@ -36,8 +36,6 @@ const walkingAndCycling = [
 ];
 
 const goodLife = [
-  "Vintage (Heuvelland)",
-  "De Bralle (Dranouter)",
   "Den Heksenstoel (Loker)",
   "'t Hellegat (Westouter)",
 ];
@@ -132,7 +130,7 @@ export const StreekPage: React.FC = () => {
                 Rond 4windenhof ontdek je een van de mooiste delen van
                 Heuvelland: heuvels, wandelroutes, fietspaden, kindvriendelijke
                 uitstappen en gezellige dorpsplekken maken van elk verblijf een
-                ontspannen vakantie in de Ardennen.
+                ontspannen vakantie in Heuvelland.
               </p>
             </div>
           </div>

@@ -75,9 +75,14 @@ export const HeroBooking: React.FC<HeroBookingProps> = ({
   return (
     <section
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/images/IMG_20211013_181147.webp')",
-      }}
+      style={
+        {
+          // backgroundImage: "url('/images/IMG_20211013_181147.webp')",
+          backgroundImage: "url('/images/DSC_7465.webp')",
+          // backgroundImage: "url('/images/bovenaanzicht.webp')",
+          // backgroundImage: "url('/images/4.webp')",
+        }
+      }
     >
       <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-black/30" />
 
@@ -91,8 +96,8 @@ export const HeroBooking: React.FC<HeroBookingProps> = ({
               {description}
             </p>
           </div>
-
-          <div className="lg:col-span-5 animate-rise-in [animation-delay:180ms]">
+          {/* de booking container is hidden en nu niet zichtbaar */}
+          <div className="lg:col-span-5 animate-rise-in [animation-delay:180ms] hidden">
             <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl border border-gray-100 backdrop-blur-sm hover-lift">
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground font-serif">
                 Zoek beschikbaarheid

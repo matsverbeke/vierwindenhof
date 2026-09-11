@@ -16,7 +16,7 @@ const photos = [
   { src: "/images/DSCN8084.webp", alt: "Uitzicht" },
   { src: "/images/bovenaanzicht.webp", alt: "Bovenaanzicht" },
   { src: "/images/16.webp", alt: "Uitzicht" },
-  { src: "/images/18.webp", alt: "Activiteiten" },
+  { src: "/images/IMG_20180905_190559.webp", alt: "Speelruimte" },
   {
     src: "/images/56269940_1250816698376488_3599188890470055936_o.webp",
     alt: "Activiteiten",

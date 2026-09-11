@@ -84,7 +84,7 @@ export const WoningenPage: React.FC<WoningenPageProps> = ({
                 {smallPropertyGuests ?? "..."} personen en een grote woning voor{" "}
                 {largePropertyGuests ?? "..."} personen. Beide vakantiewoningen
                 combineren comfort, ruimte en rust met een prachtig uitzicht
-                over de Westhoek en de Ardennen.
+                over de Westhoek en Heuvelland.
               </p>
             </div>
 
