@@ -1,4 +1,7 @@
 import siteSettings from './siteSettings'
-import availabilityPeriod from './availabilityPeriod'
+// import availabilityPeriod from './availabilityPeriod'
 
-export const schemaTypes = [siteSettings, availabilityPeriod]
+export const schemaTypes = [
+  siteSettings,
+  // , availabilityPeriod
+]

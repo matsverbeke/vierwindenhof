@@ -121,5 +121,10 @@ export default defineType({
     select: {
       title: 'homeAnnouncementText',
     },
+    prepare() {
+      return {
+        title: 'Instellingen',
+      }
+    },
   },
 })

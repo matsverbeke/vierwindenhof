@@ -12,12 +12,12 @@ export const structure: StructureResolver = (S) =>
             .documentId('siteSettings')
             .title('Woninginstellingen'),
         ),
-      S.divider(),
-      S.listItem()
-        .title('Beschikbaarheidsperiodes')
-        .child(
-          S.documentTypeList('availabilityPeriod')
-            .title('Beschikbaarheidsperiodes')
-            .menuItems(S.documentTypeList('availabilityPeriod').getMenuItems()),
-        ),
+      // S.divider(),
+      // S.listItem()
+      //   .title('Beschikbaarheidsperiodes')
+      //   .child(
+      //     S.documentTypeList('availabilityPeriod')
+      //       .title('Beschikbaarheidsperiodes')
+      //       .menuItems(S.documentTypeList('availabilityPeriod').getMenuItems()),
+      //   ),
     ])
