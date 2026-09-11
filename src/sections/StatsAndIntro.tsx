@@ -11,7 +11,7 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
   const minGuests = siteSettings?.smallHouseGuests;
   const maxGuests = siteSettings?.largeHouseGuests;
   const stats = [
-    { value: "12.000 m²", label: "eigen grond" },
+    { value: "2.500 m²", label: "eigen grond" },
     { value: "2 woningen", label: "op één domein" },
     {
       value: `${minGuests ?? "..."}–${maxGuests ?? "..."} gasten`,
