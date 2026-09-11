@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Navbar } from "./components/layout/Navbar";
 import { HeroBooking } from "./sections/HeroBooking";
 import { StatsAndIntro } from "./sections/StatsAndIntro";
@@ -233,52 +234,55 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-muted-bg text-foreground flex flex-col antialiased selection:bg-primary/20 selection:text-primary">
-      {announcementVisible ? (
-        <section className="bg-[#5E7D3B] text-white animate-rise-in">
-          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2">
-            <p className="text-center text-sm sm:text-base font-medium leading-relaxed pr-10">
-              {siteSettings?.homeAnnouncementText}
-            </p>
-            <button
-              type="button"
-              onClick={() => setAnnouncementDismissed(true)}
-              className="absolute right-4 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center text-white/85 transition-all duration-300 hover:text-white hover:scale-110"
-              aria-label="Sluit mededeling"
-            >
-              <span className="text-2xl font-medium mb-1.5 leading-none bg-[#5E7D3B] text-white">
-                ×
-              </span>
-            </button>
-          </div>
-        </section>
-      ) : null}
-      <Navbar
-        activePage={page}
-        onNavigateHome={() => navigate("home")}
-        onNavigateWoningen={() => navigate("woningen")}
-        onNavigateStreek={() => navigate("streek")}
-        announcementVisible={announcementVisible}
-      />
-      {page === "woningen" ? (
-        <WoningenPage siteSettings={siteSettings} />
-      ) : page === "streek" ? (
-        <StreekPage />
-      ) : (
-        <main className="grow">
-          <HeroBooking
-            title="Landelijk vakantiehuis in Loker, 4windenhof"
-            description="Bij ons staan de begrippen kindvriendelijkheid en toegankelijkheid hoog in het vaandel."
-            siteSettings={siteSettings}
-            availabilityPeriods={availabilityPeriods}
-          />
-          <StatsAndIntro siteSettings={siteSettings} />
-          <PhotoCarousel />
-          <Activities />
-          <LocationMap />
-        </main>
-      )}
-      <Footer />
-    </div>
+    <>
+      <Analytics />
+      <div className="min-h-screen bg-muted-bg text-foreground flex flex-col antialiased selection:bg-primary/20 selection:text-primary">
+        {announcementVisible ? (
+          <section className="bg-[#5E7D3B] text-white animate-rise-in">
+            <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2">
+              <p className="text-center text-sm sm:text-base font-medium leading-relaxed pr-10">
+                {siteSettings?.homeAnnouncementText}
+              </p>
+              <button
+                type="button"
+                onClick={() => setAnnouncementDismissed(true)}
+                className="absolute right-4 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center text-white/85 transition-all duration-300 hover:text-white hover:scale-110"
+                aria-label="Sluit mededeling"
+              >
+                <span className="text-2xl font-medium mb-1.5 leading-none bg-[#5E7D3B] text-white">
+                  ×
+                </span>
+              </button>
+            </div>
+          </section>
+        ) : null}
+        <Navbar
+          activePage={page}
+          onNavigateHome={() => navigate("home")}
+          onNavigateWoningen={() => navigate("woningen")}
+          onNavigateStreek={() => navigate("streek")}
+          announcementVisible={announcementVisible}
+        />
+        {page === "woningen" ? (
+          <WoningenPage siteSettings={siteSettings} />
+        ) : page === "streek" ? (
+          <StreekPage />
+        ) : (
+          <main className="grow">
+            <HeroBooking
+              title="Landelijk vakantiehuis in Loker, 4windenhof"
+              description="Bij ons staan de begrippen kindvriendelijkheid en toegankelijkheid hoog in het vaandel."
+              siteSettings={siteSettings}
+              availabilityPeriods={availabilityPeriods}
+            />
+            <StatsAndIntro siteSettings={siteSettings} />
+            <PhotoCarousel />
+            <Activities />
+            <LocationMap />
+          </main>
+        )}
+        <Footer />
+      </div>
+    </>
   );
 }
