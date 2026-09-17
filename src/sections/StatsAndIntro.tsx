@@ -11,13 +11,13 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
   const minGuests = siteSettings?.smallHouseGuests;
   const maxGuests = siteSettings?.largeHouseGuests;
   const stats = [
-    { value: "2.500 m²", label: "tuin" },
     { value: "2 woningen", label: "op één domein" },
     {
       value: `${minGuests ?? "..."} + ${maxGuests ?? "..."} gasten`,
       label: "ideaal formaat",
     },
-    { value: "± 10 min", label: "wandelen van dorpskern" },
+    { value: "2.500 m²", label: "tuin" },
+    { value: "± 5 min", label: "van het dorp" },
   ];
 
   return (
@@ -52,12 +52,12 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
         <div className="mt-6 space-y-4 text-gray-600 leading-relaxed text-base sm:text-lg">
           <p>
             In Loker, midden in Heuvelland, gaven we in 2015 de oude stallingen
-            van onze boerderij een nieuw leven met twee vakantiewoningen: één
-            kleine en één grote. 4windenhof is een geliefd vakantiehuis in Loker
-            voor gezinnen, wandelaars en fietsers die rust, ruimte en een
-            authentieke vakantie in Heuvelland zoeken. Het ligt tussen wandel-,
-            fiets- en ruiterpaden, op een steenworp van de Franse grens en vlak
-            bij Ieper en Rijsel.
+            van onze boerderij een nieuw leven met twee vakantiewoningen.
+            4windenhof is een geliefd vakantiehuis in Loker voor gezinnen,
+            wandelaars en fietsers die rust, ruimte en een authentieke vakantie
+            in Heuvelland zoeken. Het 4windenhofligt tussen wandel-, fiets- en
+            ruiterpaden, op een steenworp van de Franse grens en vlak bij Ieper
+            en Rijsel.
           </p>
           <p>
             Beide woningen zijn ingericht met hedendaags comfort en een warme

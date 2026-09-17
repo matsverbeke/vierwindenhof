@@ -10,7 +10,8 @@ export default defineType({
       title: 'Melding op homepagina tonen',
       type: 'boolean',
       initialValue: false,
-      description: 'Zet dit aan om tijdelijk een belangrijk bericht bovenaan de homepagina te tonen.',
+      description:
+        'Zet dit aan om tijdelijk een belangrijk bericht bovenaan de homepagina te tonen.',
     }),
     defineField({
       name: 'homeAnnouncementText',
@@ -37,7 +38,7 @@ export default defineType({
       name: 'smallHouseGuests',
       title: 'Capaciteit kleine woning',
       type: 'number',
-      description: 'Pas hier het aantal personen aan voor de kleine woning.',
+      description: 'Pas hier het aantal personen aan van de kleine woning.',
       initialValue: 12,
       validation: (Rule) => Rule.required().min(1),
     }),
@@ -45,7 +46,7 @@ export default defineType({
       name: 'largeHouseGuests',
       title: 'Capaciteit grote woning',
       type: 'number',
-      description: 'Pas hier het aantal personen aan voor de grote woning.',
+      description: 'Pas hier het aantal personen aan van de grote woning.',
       initialValue: 20,
       validation: (Rule) => Rule.required().min(1),
     }),

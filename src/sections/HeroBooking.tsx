@@ -11,8 +11,8 @@ type HeroBookingProps = {
 };
 
 export const HeroBooking: React.FC<HeroBookingProps> = ({
-  title = "Landelijk vakantiehuis in Loker, 4windenhof",
-  description = "Bij ons staan de begrippen kindvriendelijkheid en toegankelijkheid hoog in het vaandel.",
+  title = "4windenhof, Landelijk vakantiehuis te Loker",
+  description = "Kindvriendelijk en toegankelijk logeren.",
   siteSettings = null,
   availabilityPeriods = [],
 }) => {
@@ -75,14 +75,12 @@ export const HeroBooking: React.FC<HeroBookingProps> = ({
   return (
     <section
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-cover bg-center"
-      style={
-        {
-          // backgroundImage: "url('/images/IMG_20211013_181147.webp')",
-          backgroundImage: "url('/images/DSC_7465.webp')",
-          // backgroundImage: "url('/images/bovenaanzicht.webp')",
-          // backgroundImage: "url('/images/4.webp')",
-        }
-      }
+      style={{
+        // backgroundImage: "url('/images/IMG_20211013_181147.webp')",
+        backgroundImage: "url('/images/DSC_7465.webp')",
+        // backgroundImage: "url('/images/bovenaanzicht.webp')",
+        // backgroundImage: "url('/images/4.webp')",
+      }}
     >
       <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-black/30" />
 

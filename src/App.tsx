@@ -270,8 +270,8 @@ export default function App() {
         ) : (
           <main className="grow">
             <HeroBooking
-              title="Landelijk vakantiehuis in Loker, 4windenhof"
-              description="Bij ons staan de begrippen kindvriendelijkheid en toegankelijkheid hoog in het vaandel."
+              title="4windenhof, Landelijk vakantiehuis te Loker"
+              description="Kindvriendelijk en toegankelijk logeren."
               siteSettings={siteSettings}
               availabilityPeriods={availabilityPeriods}
             />

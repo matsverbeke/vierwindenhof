@@ -37,7 +37,8 @@ const walkingAndCycling = [
 
 const goodLife = [
   "Den Heksenstoel (Loker)",
-  "'t Hellegat (Westouter)",
+  "'t Hellegat (Rodeberg)",
+  "Meerdere wijndomeinen op wandelafstand",
 ];
 
 const streekFacts = [
