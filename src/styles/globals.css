@@ -84,7 +84,8 @@
   @keyframes drop-in {
     from {
       opacity: 0;
-      transform: translate3d(0, -56px, 0) scale(0.94);
+      /* start a bit higher and only slightly scaled for a gentler entry */
+      transform: translate3d(0, -80px, 0) scale(0.985);
     }
 
     to {
@@ -130,7 +131,8 @@
   }
 
   .animate-drop-in {
-    animation: drop-in 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    /* longer duration and softer easing for a calmer drop */
+    animation: drop-in 750ms cubic-bezier(0.22, 1, 0.36, 1) both;
     transform-origin: top center;
   }
 

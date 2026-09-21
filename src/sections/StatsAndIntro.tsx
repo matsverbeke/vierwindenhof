@@ -24,22 +24,34 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
     <section className="relative bg-muted-bg pb-16">
       {/* Zwevende balk die over de hero valt */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -translate-y-12">
-        <div className="relative -mt-12 sm:-mt-16 z-20 bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-8 hover-lift animate-rise-in">
+        <div
+          className="relative -mt-12 sm:-mt-16 z-20 bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-8 hover-lift animate-drop-in"
+          style={{ animationDelay: "350ms" }}
+        >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:divide-x divide-gray-100">
-            {stats.map((stat, idx) => (
-              <div
-                key={idx}
-                className={`${idx > 1 ? "pt-4 md:pt-0" : ""} animate-rise-in`}
-                style={{ animationDelay: `${idx * 90}ms` }}
-              >
-                <div className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
-                  {stat.value}
+            {stats.map((stat, idx) => {
+              // containerDelay (ms) must match the container's animationDelay above
+              const containerDelay = 300; // ms
+              const containerDuration = 400;
+              const stagger = 90; // per-item stagger in ms
+              const itemDelay =
+                containerDelay + containerDuration + idx * stagger;
+
+              return (
+                <div
+                  key={idx}
+                  className={`${idx > 1 ? "pt-4 md:pt-0" : ""} animate-rise-in`}
+                  style={{ animationDelay: `${itemDelay}ms` }}
+                >
+                  <div className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs sm:text-sm text-gray-500 mt-1 font-medium">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="text-xs sm:text-sm text-gray-500 mt-1 font-medium">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
