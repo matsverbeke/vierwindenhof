@@ -67,7 +67,7 @@ export const StatsAndIntro: React.FC<StatsAndIntroProps> = ({
             van onze boerderij een nieuw leven met twee vakantiewoningen.
             4windenhof is een geliefd vakantiehuis in Loker voor gezinnen,
             wandelaars en fietsers die rust, ruimte en een authentieke vakantie
-            in Heuvelland zoeken. Het 4windenhofligt tussen wandel-, fiets- en
+            in Heuvelland zoeken. Het 4windenhof ligt tussen wandel-, fiets- en
             ruiterpaden, op een steenworp van de Franse grens en vlak bij Ieper
             en Rijsel.
           </p>
