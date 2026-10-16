@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
             rel="noreferrer"
             className="font-medium text-gray-500 hover:text-foreground transition-colors"
           >
-            By Mats
+            By Mats V.
           </a>
         </div>
       </div>

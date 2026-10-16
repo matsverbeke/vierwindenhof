@@ -22,8 +22,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={
         announcementVisible
-          ? "absolute left-0 top-12 w-full z-50 bg-transparent transition-opacity duration-500 ease-out animate-rise-in"
-          : "absolute top-0 left-0 w-full z-50 bg-transparent transition-opacity duration-500 ease-out animate-rise-in"
+          ? "absolute left-0 top-[calc(env(safe-area-inset-top)+3rem)] w-full z-50 bg-transparent transition-opacity duration-500 ease-out animate-rise-in"
+          : "absolute top-[env(safe-area-inset-top)] left-0 w-full z-50 bg-transparent transition-opacity duration-500 ease-out animate-rise-in"
       }
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
