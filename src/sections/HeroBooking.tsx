@@ -73,16 +73,19 @@ export const HeroBooking: React.FC<HeroBookingProps> = ({
   };
 
   return (
-    <section
-      className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-cover bg-center"
-      style={{
-        // backgroundImage: "url('/images/IMG_20211013_181147.webp')",
-        backgroundImage: "url('/images/DSC_7465.webp')",
-        // backgroundImage: "url('/images/bovenaanzicht.webp')",
-        // backgroundImage: "url('/images/4.webp')",
-      }}
-    >
-      <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-black/30" />
+    <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 bg-cover bg-center"
+        style={{
+          top: "calc(-1 * env(safe-area-inset-top))",
+          backgroundImage: "url('/images/DSC_7465.webp')",
+        }}
+      />
+      <div
+        className="absolute inset-x-0 bottom-0 bg-linear-to-r from-black/80 via-black/50 to-black/30"
+        style={{ top: "calc(-1 * env(safe-area-inset-top))" }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
