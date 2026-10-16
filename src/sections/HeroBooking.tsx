@@ -78,13 +78,13 @@ export const HeroBooking: React.FC<HeroBookingProps> = ({
         aria-hidden="true"
         className="absolute inset-x-0 bottom-0 bg-cover bg-center"
         style={{
-          top: "calc(-1 * env(safe-area-inset-top))",
+          top: "calc(0px - env(safe-area-inset-top))",
           backgroundImage: "url('/images/DSC_7465.webp')",
         }}
       />
       <div
         className="absolute inset-x-0 bottom-0 bg-linear-to-r from-black/80 via-black/50 to-black/30"
-        style={{ top: "calc(-1 * env(safe-area-inset-top))" }}
+        style={{ top: "calc(0px - env(safe-area-inset-top))" }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
